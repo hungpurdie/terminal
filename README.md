@@ -16,13 +16,13 @@ Install-Module posh-git -Scope CurrentUser -Force
 Import-Module Terminal-Icons
 Import-Module posh-git
 Import-Module oh-my-posh
-Set-PoshPrompt -Theme cinnamon
+Set-PoshPrompt -Theme agnoster
 ```
 
 # Install fonts with support for the glyphs
 1. [NerdFonts](https://www.nerdfonts.com/)
 
-    * **example**: [FiraCode NerdFont](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip)
+    * **Ex**: [FiraCode NerdFont](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip)
 3. [Cascadia Code](https://github.com/microsoft/cascadia-code)
 4. Mở Windows Terminar or Windows Terminar Preview và vào settings(`ctrl+,`)
 5. Open JSON file
@@ -110,4 +110,70 @@ list": [
     },
   ]
 ```
+8. **Configuration agnoster  theme**
+* Mở terminal và cd đến thư mục lưu trữ module `oh my posh`
+    * Trên thiết bị của tôi: `D:\Documents\PowerShell\Modules\oh-my-posh\3.150.2\themes`
+* Tiếp theo gõ vào lệnh: `notepad .\agnoster.omp.json`
+* Dán đoạn mã này vào:
+```
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "path",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#100e23",
+          "background": "#91ddff",
+          "properties": {
+            "enable_hyperlink": true,
+            "home_icon": "\uF7DB",
+            "folder_icon": "\uF115",
+            "folder_separator_icon": " \uE0B1 ",
+            "style": "agnoster"
+          }
+        },
+        {
+          "type": "git",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#193549",
+          "background": "#95ffa4"
+        },
+        {
+          "type": "exit",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#ffffff",
+          "background": "#ff8080"
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#ffffff",
+          "properties": {
+            "prefix": " \uFC0C",
+            "text": ""
+          }
+        }
+      ]
+    }
+  ],
+  "final_space": true
+}
+
+```
+[]()
+
 
