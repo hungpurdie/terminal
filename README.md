@@ -1,6 +1,6 @@
 # Installing oh-my-posh
 
-* Run script 
+- Run script
 
 ```
 Install-Module oh-my-posh -Scope CurrentUser
@@ -10,8 +10,9 @@ Install-Module posh-git -Scope CurrentUser -Force
 
 # Modify the PowerShell profile
 
-* Cấu hình Powershell file: `notepad $profile`
-* Dán đoán mã sau vào
+- Cấu hình Powershell file: `notepad $profile`
+- Dán đoán mã sau vào
+
 ```
 Import-Module Terminal-Icons
 Import-Module posh-git
@@ -20,13 +21,16 @@ Set-PoshPrompt -Theme agnoster
 ```
 
 # Install fonts with support for the glyphs
+
 1. [NerdFonts](https://www.nerdfonts.com/)
 
-    * **Ex**: [FiraCode NerdFont](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip)
-3. [Cascadia Code](https://github.com/microsoft/cascadia-code)
-4. Mở Windows Terminar or Windows Terminar Preview và vào settings(`ctrl+,`)
-5. Open JSON file
-6. **List command line**
+   - **Ex**: [FiraCode NerdFont](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip)
+
+2. [Cascadia Code](https://github.com/microsoft/cascadia-code)
+3. Mở Windows Terminar or Windows Terminar Preview và vào settings(`ctrl+,`)
+4. Open JSON file
+5. **List command line**
+
 ```
 list": [
       {
@@ -44,6 +48,7 @@ list": [
 ```
 
 6. **Setting**
+
 ```
 "copyFormatting": "none",
   "copyOnSelect": false,
@@ -59,7 +64,9 @@ list": [
       "fontWeight": "bold"
     },
 ```
+
 7. **Theme**
+
 ```
 "schemes": [
     {
@@ -110,11 +117,14 @@ list": [
     },
   ]
 ```
-8. **Configuration agnoster  theme**
-* Mở terminal và cd đến thư mục lưu trữ module `oh my posh`
-    * Trên thiết bị của tôi: `D:\Documents\PowerShell\Modules\oh-my-posh\3.150.2\themes`
-* Tiếp theo gõ vào lệnh: `notepad .\agnoster.omp.json`
-* Dán đoạn mã này vào:
+
+8. **Configuration agnoster theme**
+
+- Mở terminal và cd đến thư mục lưu trữ module `oh my posh`
+  - Trên thiết bị của tôi: `D:\Documents\PowerShell\Modules\oh-my-posh\3.150.2\themes`
+- Tiếp theo gõ vào lệnh: `notepad .\agnoster.omp.json`
+- Dán đoạn mã này vào:
+
 ```
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
@@ -174,6 +184,5 @@ list": [
 }
 
 ```
-[]()
 
-
+![Imgage](https://github.com/nmhung2022/CustomizeWindowsTerminal/blob/main/image.png?raw=true)
