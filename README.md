@@ -134,6 +134,14 @@ list": [
       "alignment": "left",
       "segments": [
         {
+          "type": "text",
+          "style": "plain",
+          "properties": {
+            "prefix": "🦄",
+            "text": ""
+          }
+        },
+        {
           "type": "path",
           "style": "powerline",
           "powerline_symbol": "\uE0B0",
@@ -144,7 +152,19 @@ list": [
             "home_icon": "\uF7DB",
             "folder_icon": "\uF115",
             "folder_separator_icon": " \uE0B1 ",
-            "style": "agnoster"
+            "style": "agnoster_short"
+          }
+        },
+        {
+          "type": "executiontime",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#ffffff",
+          "background": "#83769c",
+
+          "properties": {
+            "always_enabled": true,
+            "prefix": " \uF017 "
           }
         },
         {
@@ -171,16 +191,19 @@ list": [
         {
           "type": "text",
           "style": "plain",
-          "foreground": "#ffffff",
+          "foreground": "#f7630c",
           "properties": {
-            "prefix": " \uFC0C",
+            "prefix": "\uFC0C",
             "text": ""
           }
         }
       ]
     }
   ],
-  "final_space": true
+  "final_space": true,
+  "console_title": true,
+  "console_title_style": "template",
+  "console_title_template": "{{ .Shell }} in {{ .Folder }}"
 }
 
 ```
