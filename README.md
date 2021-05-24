@@ -209,4 +209,4 @@ list": [
 ```
 9. **Successful**
 
-![Imgage](https://github.com/nmhung2022/CustomizeWindowsTerminal/blob/main/image.png?raw=true)
+![Imgage](https://github.com/nmhung2022/CustomizeWindowsTerminal/blob/main/a.png?raw=true)
