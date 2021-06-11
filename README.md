@@ -5,7 +5,6 @@
 ```
 Install-Module oh-my-posh -Scope CurrentUser
 Install-Module -Name Terminal-Icons -Repository PSGallery
-Install-Module posh-git -Scope CurrentUser -Force
 ```
 
 # Modify the PowerShell profile
@@ -15,7 +14,6 @@ Install-Module posh-git -Scope CurrentUser -Force
 
 ```
 Import-Module Terminal-Icons
-Import-Module posh-git
 Import-Module oh-my-posh
 Set-PoshPrompt -Theme agnoster
 ```
