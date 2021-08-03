@@ -22,24 +22,26 @@ Set-PoshPrompt -Theme agnoster
 
 1. [NerdFonts](https://www.nerdfonts.com/)
 
-   - **Ex**: [FiraCode NerdFont](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip)
+   - **Ex**: [FiraCode NerdFont](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode)
 
 2. [Cascadia Code](https://github.com/microsoft/cascadia-code)
-3. Mở Windows Terminar or Windows Terminar Preview và vào settings(`ctrl+,`)
+3. Mở Windows Terminal or Windows Terminal Preview và vào settings(`ctrl+,`)
 4. Open JSON file
 5. **List command line**
 
 ```
 list": [
       {
-        "colorScheme": "codingphase",
+        "backgroundImage": "D:\\Documents\\PowerShell\\background\\a.jpg",
+        "backgroundImageOpacity": 0.40000000000000002,
+        "colorScheme": "CodingPhase",
         "commandline": "pwsh.exe -NoLogo",
-        "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+        "experimental.retroTerminalEffect": false,
         "hidden": false,
-        "icon": "D:\\Documents\\PowerShell\\icon\\1.png",
+        "icon": "D:\\Documents\\PowerShell\\icon\\2.png",
         "name": "PowerShell",
-        "source": "Windows.Terminal.PowershellCore",
-        "startingDirectory": "C:\\Users\\GG\\Desktop",
+        "startingDirectory": "C:\\Users\\Root\\Desktop",
+        "suppressApplicationTitle": false,
         "tabTitle": "Terminal"
       },
     ]
@@ -49,17 +51,17 @@ list": [
 
 ```
 "copyFormatting": "none",
-  "copyOnSelect": false,
+  "copyOnSelect": true,
   "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-  "initialCols": 95,
+  "focusFollowMouse": true,
+  "initialCols": 90,
   "initialRows": 20,
   "profiles": {
     "defaults": {
-      "cursorHeight": 15,
+      "cursorHeight": 16,
       "cursorShape": "vintage",
-      "fontFace": "FiraCode NF Retina",
-      "fontSize": 16,
-      "fontWeight": "bold"
+      "fontFace": "FiraCode Nerd Font Mono Retina",
+      "fontSize": 18
     },
 ```
 
@@ -84,7 +86,7 @@ list": [
       "foreground": "#FFFFFF",
       "green": "#0DF802",
       "purple": "#881798",
-      "name": "codingphase",
+      "name": "CodingPhase",
       "red": "#C50F1F",
       "selectionBackground": "#FFFFFF",
       "white": "#CBF9F5",
@@ -205,6 +207,7 @@ list": [
 }
 
 ```
+
 9. **Successful**
 
 ![Imgage](https://github.com/nmhung2022/CustomizeWindowsTerminal/blob/main/a.png?raw=true)
