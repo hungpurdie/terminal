@@ -142,6 +142,18 @@ list": [
           }
         },
         {
+          "type": "executiontime",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#ffffff",
+          "background": "#83769c",
+
+          "properties": {
+            "always_enabled": true,
+            "prefix": " \uF017 "
+          }
+        },
+        {
           "type": "path",
           "style": "powerline",
           "powerline_symbol": "\uE0B0",
@@ -153,18 +165,6 @@ list": [
             "folder_icon": "\uF115",
             "folder_separator_icon": " \uE0B1 ",
             "style": "agnoster_short"
-          }
-        },
-        {
-          "type": "executiontime",
-          "style": "powerline",
-          "powerline_symbol": "\uE0B0",
-          "foreground": "#ffffff",
-          "background": "#83769c",
-
-          "properties": {
-            "always_enabled": true,
-            "prefix": " \uF017 "
           }
         },
         {
