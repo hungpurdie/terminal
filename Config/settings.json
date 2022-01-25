@@ -9,12 +9,12 @@
       "keys": "ctrl+c"
     },
     {
-      "command": "paste",
-      "keys": "ctrl+v"
-    },
-    {
       "command": "find",
       "keys": "ctrl+shift+f"
+    },
+    {
+      "command": "paste",
+      "keys": "ctrl+v"
     },
     {
       "command": {
@@ -25,25 +25,18 @@
       "keys": "alt+shift+d"
     }
   ],
-  "alwaysOnTop": false,
-  "alwaysShowTabs": true,
   "copyFormatting": "none",
   "copyOnSelect": true,
   "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
   "focusFollowMouse": true,
-  "initialCols": 70,
-  "initialRows": 15,
+  "initialCols": 90,
+  "initialRows": 20,
   "profiles": {
     "defaults": {
-      "backgroundImage": "D:\\Documents\\PowerShell\\Background\\a.jpg",
-      "backgroundImageOpacity": 0.40000000000000002,
-      "colorScheme": "CodingPhase",
       "cursorHeight": 16,
       "cursorShape": "vintage",
-      "font": {
-        "face": "FiraCode NF Retina",
-        "size": 16
-      }
+      "fontFace": "FiraCode NF Retina",
+      "fontSize": 18
     },
     "list": [
       {
@@ -71,12 +64,19 @@
         "source": "Git"
       },
       {
+        "backgroundImage": "D:\\Documents\\PowerShell\\background\\a.jpg",
+        "backgroundImageOpacity": 0.40000000000000002,
+        "colorScheme": "CodingPhase",
+        "commandline": "pwsh.exe -NoLogo",
+        "experimental.retroTerminalEffect": false,
         "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
         "hidden": false,
+        "icon": "D:\\Documents\\PowerShell\\icon\\2.png",
         "name": "PowerShell",
         "source": "Windows.Terminal.PowershellCore",
-        "startingDirectory": "C:\\Users\\Hooks\\Desktop"
-
+        "startingDirectory": "C:\\Users\\Hook\\Desktop",
+        "suppressApplicationTitle": false,
+        "tabTitle": "Terminal"
       }
     ]
   },
@@ -311,5 +311,6 @@
       "white": "#C0C0C0",
       "yellow": "#808000"
     }
-  ]
+  ],
+  "snapToGridOnResize": true
 }

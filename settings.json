@@ -74,7 +74,7 @@
         "icon": "D:\\Documents\\PowerShell\\icon\\2.png",
         "name": "PowerShell",
         "source": "Windows.Terminal.PowershellCore",
-        "startingDirectory": "C:\\Users\\Root\\Desktop",
+        "startingDirectory": "C:\\Users\\Hook\\Desktop",
         "suppressApplicationTitle": false,
         "tabTitle": "Terminal"
       }
