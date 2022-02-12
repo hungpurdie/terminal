@@ -5,7 +5,6 @@ function configTheme() {
         Copy-Item "$($pathConfig)\config\night-owl.omp.json" -Destination "$($pathTheme)\themes"
         Write-Host "Config theme in terminal succesfully"
 }
-
 configTheme
 
 function configTerminal() {
@@ -14,5 +13,11 @@ function configTerminal() {
     Copy-Item "$($pathConfig)\config\settings.json" -Destination $($pathDestination)
     Write-Host "Config setting terminal succesfully"
 }
-
 configTerminal
+
+function configPowerShell() {
+    $pathProfilePWShell = "D:\Documents\PowerShell"
+    Copy-Item "$($pathConfig)\Microsoft.PowerShell_profile.ps1" -Destination $($pathProfilePWShell)
+    Write-Host "Config Profile PowerShell in terminal sccesfully"
+}
+configPowerShell
