@@ -1,5 +1,4 @@
-Import-Module "Oh-My-Posh" -DisableNameChecking -NoClobber
-Set-PoshPrompt -Theme night-owl
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/night-owl.omp.json" | Invoke-Expression
 Clear-Host
 
 #open notepad
@@ -7,7 +6,7 @@ Set-Alias -Name np -Value C:\Windows\notepad.exe -Force -Option AllScope
 
 # new file
 Function touch {
-  foreach ($fileName in $args) { 
+  foreach ($fileName in $args) {
   $pattern = "New-Item " + $fileName + " -ItemType File"
   Invoke-Expression $pattern
   }

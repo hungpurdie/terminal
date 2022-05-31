@@ -1,23 +1,3 @@
-# Installing oh-my-posh
-
-- Run script
-
-```
-Install-Module oh-my-posh -Scope CurrentUser
-Install-Module -Name Terminal-Icons -Repository PSGallery
-```
-
-# Modify the PowerShell profile
-
-- Cấu hình Powershell file: `notepad $profile`
-- Dán đoán mã sau vào
-
-```
-Import-Module Terminal-Icons
-Import-Module oh-my-posh
-Set-PoshPrompt -Theme agnoster
-```
-
 # Install fonts with support for the glyphs
 
 1. [NerdFonts](https://www.nerdfonts.com/)
