@@ -28,15 +28,18 @@
   ],
   "copyFormatting": "none",
   "copyOnSelect": false,
-  "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+  "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+  "firstWindowPreference": "defaultProfile",
   "initialCols": 70,
   "initialRows": 20,
   "profiles": {
     "defaults": {
       "colorScheme": "CodingPhase",
+      "cursorShape": "underscore",
       "font": {
-        "face": "FiraCode Nerd Font Retina",
-        "size": 17
+        "face": "FiraCode NF Retina",
+        "size": 18,
+        "weight": "semi-light"
       }
     },
     "list": [
@@ -63,12 +66,6 @@
         "hidden": false,
         "name": "Git Bash",
         "source": "Git"
-      },
-      {
-        "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-        "hidden": false,
-        "name": "PowerShell",
-        "source": "Windows.Terminal.PowershellCore"
       },
       {
         "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
